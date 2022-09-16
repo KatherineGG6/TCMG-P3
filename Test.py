@@ -19,7 +19,7 @@ with open(r"TCMG412Lab3.txt", 'r') as fp:
 
 file = open('TCMG412Lab3.txt','r')
 
-words = ["Oct/1995:", "Sep/1995:", "Aug/1995:", "Jul/1995:", "Jun/1995:", "May/1995:", "Apr/1995:", "1995"]
+words = ["Oct/1995:", "Sep/1995:", "Aug/1995:", "Jul/1995:", "Jun/1995:", "May/1995:", "Apr/1995:"]
 count=0
 lines=file.readlines()
 for line in lines:
