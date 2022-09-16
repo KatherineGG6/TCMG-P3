@@ -4,10 +4,11 @@
 
 import requests
 
+#downloadUrl = "https://s3.amazonaws.com/tcmg476/http_access_log"
+#eq = requests.get(downloadUrl)
 
-downloadUrl = "https://s3.amazonaws.com/tcmg476/http_access_log"
+#response = requests.get("https://s3.amazonaws.com/tcmg476/http_access_log")
 
-req = requests.get(downloadUrl)
-
-
-
+with open(r"TCMG412Lab3.txt", 'r') as fp:
+	lines = len(fp.readlines())
+	print('Total Number of lines:', lines)
