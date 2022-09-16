@@ -2,6 +2,7 @@
 #How many total requests have been made in the 6 months?
 #How many total requests were made in the time period represented by the log?
 
+from calendar import month_name
 import requests
 
 #downloadUrl = "https://s3.amazonaws.com/tcmg476/http_access_log"
@@ -14,11 +15,17 @@ import requests
 	#print('Total Number of lines:', lines)
 
 import re
+import linecache
 
 file = open ("TCMG412Lab3.txt", 'r')
-text = file.read()
+#text = file.read()
 
-lsm = re.findall(r'Oct', text)
+#lsm = re.findall(r'1995', text)
 
-print(lsm)
+#print(lsm)
+
+content = file.read()
+
+month = linecache.getline('TCMG412Lab3.txt', 1995)
+print(month)
 
