@@ -4,10 +4,6 @@
 
 import requests
 
-
 downloadUrl = "https://s3.amazonaws.com/tcmg476/http_access_log"
 
 req = requests.get(downloadUrl)
-
-
-
