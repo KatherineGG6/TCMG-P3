@@ -19,10 +19,6 @@
 
 file = open('TCMG412Lab3.txt','r')
 
-#word1 = 'Oct'
-#word2 = 'Sep'
-#combined = word1 and word2
-
 words = ["Oct", "Sep"]
 count=0
 lines=file.readlines()
